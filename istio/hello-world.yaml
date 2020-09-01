@@ -47,7 +47,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "hello-world.project1.com"
+    - "hello-world.dev.com"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -55,7 +55,7 @@ metadata:
   name: hello-world-vs
 spec:
   hosts:
-  - "hello-world.project1.com"
+  - "hello-world.dev.com"
   gateways:
   - hello-world-gateway
   http:
